@@ -18,7 +18,7 @@ var minshImg = function(args) {
   var p = path.join(hexo.base_dir, asset._id);
 
   return new Promise(function(resolve, reject){
-    gm(p).size(function (err, size) {
+    gm(p + '[0]').size(function (err, size) {
       if (err) { return reject(err); }
 
       return resolve('<p class="minsh-img"><img src="' + hexo.config.root + asset.path + '" style="max-width:' + size.width + 'px" alt="' + altText + '" title="' + altText + '" /></p>');
