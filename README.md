@@ -3,9 +3,12 @@ This tag plugin will add a `max-width` style into the specified image. Look at t
 
 ## Usage
 ```
-{% minsh_img trivago.jpg 'A post on the Trivago Facebook page' %}
+{% minsh_img image.png alt text here, caption here, 100 %}
 ```
 will result into 
 ```
-<p class="minsh-img"><img src="/community-building/3-steps-to-create-your-community-management-strategy-2-3/trivago.png" style="max-width:494px" alt="A post on the Trivago Facebook page" title="A post on the Trivago Facebook page"></p>
+<div class="minsh-img">
+  <img src="/community-building/3-different-types-of-community-platforms/image.png" alt="alt text here" title="alt text here" style="max-width:630px; max-height: 330px">
+  <figcaption>caption here</figcaption>
+</div>
 ```
