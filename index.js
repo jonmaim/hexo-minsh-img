@@ -3,6 +3,7 @@
 var path = require('path');
 var gm = require('gm');
 var Promise = require('bluebird');
+var maxWidth = 650;
 
 /* first parameter is the image filename. Second parameter is the alt text, third param is caption and fourth param is width ratio in %
 Parameters 2-4 need to be separated by ','
