@@ -53,7 +53,7 @@ var minshImg = function(args) {
         height = Math.floor(height * ratio);
       }
 
-      var r = '<div class="minsh-img"><img src="' + hexo.config.root + asset.path + '" alt="' + altText + '" title="' + altText + '" style="max-width:' + width + 'px; max-height: '+ height +'px" />';
+      var r = '<div class="minsh-img"><img src="' + hexo.config.root + asset.path + '" alt="' + altText + '" title="' + altText + '" style="max-width:100%; max-height: '+ height +'px" />';
       if (captionText !== '') { r += '<figcaption>' + captionText + '</figcaption>'; }
       r += '</div>';
 
